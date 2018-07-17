@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+    <link rel="stylesheet" href="semantic/semantic.min.css ">
+    <style>
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+
+        }
+
+    </style>
+</head>
+<body>
+<h1 class="ui header">ALL countries</h1>
+<table class="ui celled table">
+    <thead>
+    <tr><th>country name</th>
+        <th class="">continent id</th>
+        <th>population</th>
+    </tr></thead>
+    <tbody>
+    <% for(var i=0; i<list.length; i++) {%>
+
+
+
+
+    <tr>
+
+
+        <td><%= list[i].countryname %></td>
+        <td><%= list[i].continentid %></td>
+        <td> <%= list[i].population %></td>
+    </tr>
+    </tbody>
+    <tfoot>
+
+    </tfoot>
+    <% } %>
+</table>
+
+
+</body>
+</html>
+

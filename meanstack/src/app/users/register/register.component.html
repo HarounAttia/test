@@ -1,0 +1,77 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+
+
+<div class="container">
+
+  <hr>
+
+
+
+
+
+  <div class="card bg-light">
+    <article class="card-body mx-auto" style="max-width: 400px;">
+      <h4 class="card-title mt-3 text-center">Create Account</h4>
+      <p class="text-center">Get started with your free account</p>
+      <p>
+        <a href="" class="btn btn-block btn-twitter"> <i class="fab fa-twitter"></i>   Login via Twitter</a>
+        <a href="" class="btn btn-block btn-facebook"> <i class="fab fa-facebook-f"></i>   Login via facebook</a>
+      </p>
+      <p class="divider-text">
+        <span class="bg-light">OR</span>
+      </p>
+      <form [formGroup]="userform" novalidate (ngSubmit)="adduser(fullname.value,email.value,Password.value)" >
+        <div class="form-group input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+          </div>
+          <input name="" class="form-control" placeholder="Full name" type="text" formControlName="fullname"  #fullname>
+        </div> <!-- form-group// -->
+        <div class="form-group input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+          </div>
+          <input name="" class="form-control" placeholder="Email address" type="email" formControlName ="email"  #email>
+        </div> <!-- form-group// -->
+
+        <!-- form-group end.// -->
+        <div class="form-group input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+          </div>
+          <input class="form-control" placeholder="Create password" type="password" formControlName="Password" #Password>
+        </div> <!-- form-group// -->
+        <div class="form-group input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+          </div>
+          <input class="form-control" placeholder="Repeat password" type="password" #repeater>
+        </div> <!-- form-group// -->
+        <div *ngIf="repeater.value != Password.value" class="alert-danger" >password is not the same</div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary btn-block" [disabled]="userform.pristine || userform.invalid "> Create Account  </button>
+        </div> <!-- form-group// -->
+
+      </form>
+      <p class="text-center">Have an account? <button class="btn btn-link" (click)="navigato()" >Log In</button> </p>
+    </article>
+  </div> <!-- card.// -->
+
+</div>
+<!--container end.//-->
+
+<br><br>
+<article class="bg-secondary mb-3">
+  <div class="card-body text-center">
+    <h3 class="text-white mt-3"></h3>
+    <p class="h5 text-white"> <br> </p>   <br>
+    <p><a class="btn btn-warning" target="_blank" href="http://bootstrap-ecommerce.com/"> WorldMap.com
+      <i class="fa fa-window-restore "></i></a></p>
+  </div>
+  <br><br>
+</article>

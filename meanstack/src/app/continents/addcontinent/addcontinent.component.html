@@ -1,0 +1,29 @@
+<div class="col-sm-8 col-sm-offset-2">
+
+  <form [formGroup]="continentform" (ngSubmit)="addcontinent(continentname.value,continentlocation.value)">
+
+    <div class="form-group">
+
+      <label for="continentname">Continent name</label>
+
+      <input type="text" id="continentname" class="form-control" formControlName="continentname" #continentname>
+
+    </div>
+
+    <div class="form-group">
+
+      <label for="continentlocation">Continent location</label>
+
+      <input type="text" id="continentlocation" class="form-control" formControlName="continentlocation" #continentlocation>
+
+    </div>
+
+
+
+
+
+    <button type="submit" class="btn btn-primary">Save continent</button>
+
+  </form>
+
+</div>

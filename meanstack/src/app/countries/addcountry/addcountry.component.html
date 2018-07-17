@@ -1,0 +1,35 @@
+<div class="col-sm-8 col-sm-offset-2">
+
+  <form [formGroup]="countryform" (ngSubmit)="addCountry(Countryname.value,Population.value,continentid.value)">
+
+    <div class="form-group">
+
+      <label for="countryname">Country name</label>
+
+      <input type="text" id="countryname" class="form-control" formControlName="Countryname" #Countryname>
+
+    </div>
+
+    <div class="form-group">
+
+      <label for="continentid">continentid</label>
+
+      <input type="text" id="continentid" class="form-control" formControlName="continentid" #Population>
+
+    </div>
+
+    <div class="form-group">
+
+      <label for="population">Population</label>
+
+      <input type="text" id="population" class="form-control" formControlName="population" #continentid>
+
+    </div>
+   
+
+
+    <button type="submit" class="btn btn-primary">Save country</button>
+
+  </form>
+
+</div>

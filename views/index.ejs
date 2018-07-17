@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <style>
+          td, th {
+              border: 1px solid #dddddd;
+              text-align: left;
+              padding: 8px;
+          }
+         p.mine {
+           font-size: 70px;
+           text-align: center;
+
+
+         }
+        img{
+          object-fit: cover;
+          margin-left: auto;
+          margin-right: auto;
+          height: 500px;
+          width: 500px;
+
+
+
+        }
+      </style>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="semantic/semantic.min.css ">
+
+  </head>
+  <body>
+  <div class="ui inverted large menu">
+    <a href="/countries"class="header large item">Countries     </a>
+    <a href="/continents" class="header large item">Continents</a>
+    <div class="item">
+      <div class="ui primary button">Sign up</div>
+    </div>
+    <div class="item">
+      <div class="ui button">Log-in</div>
+    </div>
+  </div>
+
+    <p class="mine"  >Welcome to <%= title %></p>
+    <img class="ui medium circular  image" src= "images/world.jpg" alt="" >
+  <br>
+
+   <% include country %>
+    <br>
+    <% include continent %>
+
+
+
+
+
+
+
+  </body>
+</html>

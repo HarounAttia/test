@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="14ea8ad7-eb24-464f-9a4c-d98d84cb6c02" name="Default" comment="" />
+    <list default="true" id="14ea8ad7-eb24-464f-9a4c-d98d84cb6c02" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -129,6 +131,9 @@
       <dir>$PROJECT_DIR$/meanstack/src/app/continents/images</dir>
     </dirStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -211,6 +216,7 @@
     <option name="width" value="1193" />
     <option name="height" value="732" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -411,12 +417,12 @@
       <workItem from="1531735929087" duration="534000" />
       <workItem from="1531741491820" duration="208000" />
       <workItem from="1531774066988" duration="311000" />
-      <workItem from="1531820097956" duration="6482000" />
+      <workItem from="1531820097956" duration="7088000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="169922000" />
+    <option name="totallyTimeSpent" value="170528000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -435,11 +441,11 @@
       <window_info anchor="bottom" id="TODO" order="10" weight="0.32970452" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="3" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Run" order="6" weight="0.34059098" />
       <window_info id="npm" order="0" sideWeight="0.50111854" side_tool="true" weight="0.24980783" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="1" visible="true" weight="0.3281493" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="1" visible="true" weight="0.32917318" />
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.39813375" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
